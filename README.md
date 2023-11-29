@@ -133,6 +133,30 @@ POST
 ```
 
 **Corpo da Requisição:**
+
+É importante observar que os campos `status` e `course` recebem numeros inteiros no banco de dados e refletem as opções representadas no modelo do banco de dados:
+
+```python
+# Opções para o curso
+COURSE_CHOICES = (
+    (1, 'Informática'),
+    (2, 'Agroindústria'),
+    (3, 'Agropecuária')
+)
+
+# Opções para status
+STATUS_CHOICES = (
+    (1, 'Matriculado'),
+    (2, 'Cursando'),
+    (3, 'Trancado'),
+    (4, 'Concluído'),
+    (5, 'Desistente'),
+    (6, 'Formado')
+)
+```
+
+Então para um perfil de um aluno de `informática` que está apenas `matriculado`:
+
 ```json
 {
   "user_id": 1,
