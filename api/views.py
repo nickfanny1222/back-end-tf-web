@@ -189,5 +189,5 @@ def excluir_perfil(request, user_id):
     return JsonResponse({'message': 'Método não permitido'}, status=405)
 
 # view para listar os endpoints
-class Home(TemplateView):
+class HomeView(TemplateView):
     template_name = 'home.html'
