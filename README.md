@@ -7,7 +7,7 @@ A aplicação `Conexão Carreira` foi desenvolvida para promover a conexão entr
 
 ## Diagrama do banco de dados
 
-[imagem](db/diagrama.png)
+![diagrama do banco de dados](db/diagrama.png)
 
 ### Cadastrar Novo Usuário
 
