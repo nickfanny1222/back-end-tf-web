@@ -168,7 +168,7 @@ Retorna as informações de um perfil específico.
 
 **Endpoint:**
 ```plaintext
-back-end-tf-web-gray.vercel.app/api/v1/detalhes_perfil/<user_id>
+back-end-tf-web-gray.vercel.app/api/v1/detalhes_perfil/<id_do_perfil>
 ```
 
 **Tipo da Requisição:**
@@ -185,7 +185,7 @@ Altera as informações de um perfil identificado.
 
 **Endpoint:**
 ```plaintext
-back-end-tf-web-gray.vercel.app/api/v1/alterar_perfil/<user_id>
+back-end-tf-web-gray.vercel.app/api/v1/alterar_perfil/<id_do_perfil>
 ```
 
 **Tipo da Requisição:**
@@ -215,7 +215,7 @@ Exclui um perfil identificado.
 
 **Endpoint:**
 ```plaintext
-back-end-tf-web-gray.vercel.app/api/v1/excluir_perfil/<user_id>
+back-end-tf-web-gray.vercel.app/api/v1/excluir_perfil/<id_do_perfil>
 ```
 
 **Tipo da Requisição:**

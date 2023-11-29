@@ -4,6 +4,7 @@ from django.views.decorators.csrf import csrf_exempt
 from django.contrib.auth import get_user_model
 from django.contrib.auth.hashers import check_password, make_password
 from accounts.models import Profile
+from django.views.generic import TemplateView
 
 # views dedicadas ao gerenciamento de usuarios
 @csrf_exempt
@@ -186,3 +187,7 @@ def excluir_perfil(request, user_id):
             return JsonResponse({'message': 'Perfil não encontrado'}, status=404)
 
     return JsonResponse({'message': 'Método não permitido'}, status=405)
+
+# view para listar os endpoints
+class Home(TemplateView):
+    template_name = 'home.html'
