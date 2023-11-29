@@ -5,6 +5,10 @@ Back-End do trabalho final da disciplina de WEB
 
 A aplicação `Conexão Carreira` foi desenvolvida para promover a conexão entre alunos do IFNMG Campus Salinas e empresas em busca de talentos. Nossa plataforma permite que alunos criem perfis detalhados, destacando experiências acadêmicas, habilidades e informações de contato. Empresas podem explorar perfis e encontrar candidatos qualificados. Facilitamos a integração entre a comunidade acadêmica e o setor empresarial, proporcionando oportunidades valiosas para ambas as partes. Conecte-se, descubra talentos e impulsione o futuro profissional com a `Conexão Carreira`.
 
+## Modelo conceitual do banco de dados
+
+![modelo conceitual do banco de dados](db/modelo_conceitual.png)
+
 ## Diagrama do banco de dados
 
 ![diagrama do banco de dados](db/diagrama.png)
