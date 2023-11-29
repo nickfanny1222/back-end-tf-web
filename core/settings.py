@@ -97,6 +97,16 @@ WSGI_APPLICATION = 'core.wsgi.application'
 #    }
 #}
 
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'vghdcojm',
+        'USER': 'vghdcojm',
+        'PASSWORD': 'nHkldLM1vPtfAHl3Hy1HODhLodp96fii',
+        'HOST': 'isabelle.db.elephantsql.com',
+        'PORT': '5432',
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
