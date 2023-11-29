@@ -12,7 +12,7 @@ Insere um novo usuário no banco de dados.
 
 **Endpoint:**
 ```plaintext
-back-end-tf-web-gray.vercel.app/cadastrar_usuario
+back-end-tf-web-gray.vercel.app/api/v1/cadastrar_usuario
 ```
 
 **Tipo da Requisição:**
@@ -38,7 +38,7 @@ Retorna uma lista de todos os usuários cadastrados no banco de dados.
 
 **Endpoint:**
 ```plaintext
-back-end-tf-web-gray.vercel.app/listar_usuarios
+back-end-tf-web-gray.vercel.app/api/v1/listar_usuarios
 ```
 
 **Tipo da Requisição:**
@@ -55,7 +55,7 @@ Retorna as informações de um usuário específico.
 
 **Endpoint:**
 ```plaintext
-back-end-tf-web-gray.vercel.app/detalhes_usuario/<id_do_usuario>
+back-end-tf-web-gray.vercel.app/api/v1/detalhes_usuario/<id_do_usuario>
 ```
 
 **Tipo da Requisição:**
@@ -72,7 +72,7 @@ Altera as informações de um usuário identificado.
 
 **Endpoint:**
 ```plaintext
-back-end-tf-web-gray.vercel.app/alterar_usuario/<id_do_usuario>
+back-end-tf-web-gray.vercel.app/api/v1/alterar_usuario/<id_do_usuario>
 ```
 
 **Tipo da Requisição:**
@@ -99,7 +99,7 @@ Exclui um usuário identificado.
 
 **Endpoint:**
 ```plaintext
-back-end-tf-web-gray.vercel.app/excluir_usuario/<id_do_usuario>
+back-end-tf-web-gray.vercel.app/api/v1/excluir_usuario/<id_do_usuario>
 ```
 
 **Tipo da Requisição:**
@@ -116,7 +116,7 @@ Insere um novo perfil no banco de dados.
 
 **Endpoint:**
 ```plaintext
-back-end-tf-web-gray.vercel.app/cadastrar_perfil
+back-end-tf-web-gray.vercel.app/api/v1/cadastrar_perfil
 ```
 
 **Tipo da Requisição:**
@@ -147,7 +147,7 @@ Retorna uma lista de todos os perfis cadastrados no banco de dados.
 
 **Endpoint:**
 ```plaintext
-back-end-tf-web-gray.vercel.app/listar_perfis
+back-end-tf-web-gray.vercel.app/api/v1/listar_perfis
 ```
 
 **Tipo da Requisição:**
@@ -164,7 +164,7 @@ Retorna as informações de um perfil específico.
 
 **Endpoint:**
 ```plaintext
-back-end-tf-web-gray.vercel.app/detalhes_perfil/<user_id>
+back-end-tf-web-gray.vercel.app/api/v1/detalhes_perfil/<user_id>
 ```
 
 **Tipo da Requisição:**
@@ -181,7 +181,7 @@ Altera as informações de um perfil identificado.
 
 **Endpoint:**
 ```plaintext
-back-end-tf-web-gray.vercel.app/alterar_perfil/<user_id>
+back-end-tf-web-gray.vercel.app/api/v1/alterar_perfil/<user_id>
 ```
 
 **Tipo da Requisição:**
@@ -211,7 +211,7 @@ Exclui um perfil identificado.
 
 **Endpoint:**
 ```plaintext
-back-end-tf-web-gray.vercel.app/excluir_perfil/<user_id>
+back-end-tf-web-gray.vercel.app/api/v1/excluir_perfil/<user_id>
 ```
 
 **Tipo da Requisição:**
