@@ -7,11 +7,20 @@ A aplicação `Conexão Carreira` foi desenvolvida para promover a conexão entr
 
 ## Modelo conceitual do banco de dados
 
-![modelo conceitual do banco de dados](db/modelo_conceitual.png)
+![modelo conceitual do banco de dados](db/conceitual.png)
 
-## Diagrama do banco de dados
+## Modelo lógico do banco de dados
 
-![diagrama do banco de dados](db/diagrama.png)
+![modelo lógico do banco de dados](db/logico.png)
+
+## Modelo físico do banco de dados
+
+[Modelo físico do banco de dados](db/DDL.sql)
+
+## Ferramentas Utilizadas
+- **brModelo** (Para cração dos modelos conceitual e lógico)
+- **Visual Studio Code** (Para criação do modelo físico)
+- **Neon Tech** (Para hospedar o banco de dados)
 
 ### Cadastrar Novo Usuário
 
