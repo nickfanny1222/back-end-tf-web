@@ -68,7 +68,7 @@ router.put("/user/:id", autenticacao, async (req, res) => {
         const usuario = await selectUser(req.params.id);
 
         if (usuario.length > 0) {
-            await updateUser(req.body);
+            await updateUser(req.params.id, req.body);
             res.status(200).json({ message: "Usuário atualizado com sucesso!" });
         }
         

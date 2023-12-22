@@ -41,7 +41,7 @@ router.put("/hability/:id", autenticacao, async (req, res) => {
         const hability = await selectHability(req.params.id);
 
         if (hability.length > 0) {
-            await updateHability(req.body);
+            await updateHability(req.params.id, req.body);
             res.status(200).json({ message: "Habilidade atualizada com sucesso!" });
         }
         
