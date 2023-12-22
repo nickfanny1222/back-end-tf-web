@@ -6,7 +6,7 @@ async function selectHability(id) {
     const query = "SELECT * FROM habilidade WHERE id = $1";
     const habilidade = [id];
     const res = await client.query(query, habilidade);
-    return res.rows[0];
+    return res.rows;
 }
 
 async function selectHabilityByUser(id) {
