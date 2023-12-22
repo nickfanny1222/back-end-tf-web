@@ -91,14 +91,14 @@ token: your_login_token
 **Body:**
 ```json
 {
-    "nome": (String) "nome",
-    "nome_completo": (String) "nome_completo",
-    "email": (String) "email",
-    "senha": (String) "senha",
-    "telefone": (String) "telefone",
-    "curso": (Int) "curso",
-    "estado": (Int) "estado",
-    "ativo": (Bool) "ativo"
+    "nome": "nome" (String),
+    "nome_completo": "nome_completo" (String),
+    "email": "email" (String),
+    "senha": "senha" (String),
+    "telefone": "telefone" (String),
+    "curso": "curso" (Int),
+    "estado": "estado" (Int),
+    "ativo": "ativo" (Bool)
 }
 ```
 
@@ -135,14 +135,14 @@ token: your_login_token
 **Body:**
 ```json
 {
-    "nome": (String) "nome",
-    "nome_completo": (String) "nome_completo",
-    "email": (String) "email",
-    "senha": (String) "senha",
-    "telefone": (String) "telefone",
-    "curso": (Int) "curso",
-    "estado": (Int) "estado",
-    "ativo": (Bool) "ativo"
+    "nome": "nome" (String),
+    "nome_completo": "nome_completo" (String),
+    "email": "email" (String),
+    "senha": "senha" (String),
+    "telefone": "telefone" (String),
+    "curso": "curso" (Int),
+    "estado": "estado" (Int),
+    "ativo": "ativo" (Bool)
 }
 ```
 
@@ -189,9 +189,9 @@ token: your_login_token
 **Body:**
 ```json
 {
-    "usuario": (Int) "usuario",
-    "titulo": (String) "titulo",
-    "descricao": (String) "descricao"
+    "usuario": "usuario" (Int),
+    "titulo": "titulo" (String),
+    "descricao": "descricao (String)"
 }
 ```
 
@@ -208,9 +208,9 @@ token: your_login_token
 **Body:**
 ```json
 {
-    "usuario": (Int) "usuario",
-    "titulo": (String) "titulo",
-    "descricao": (String) "descricao"
+    "usuario": "usuario" (Int),
+    "titulo": "titulo" (String),
+    "descricao": "descricao (String)"
 }
 ```
 
