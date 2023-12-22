@@ -191,7 +191,7 @@ token: your_login_token
 {
     "usuario": "usuario" (Int),
     "titulo": "titulo" (String),
-    "descricao": "descricao (String)"
+    "descricao": "descricao" (String)
 }
 ```
 
@@ -210,7 +210,7 @@ token: your_login_token
 {
     "usuario": "usuario" (Int),
     "titulo": "titulo" (String),
-    "descricao": "descricao (String)"
+    "descricao": "descricao" (String)
 }
 ```
 
