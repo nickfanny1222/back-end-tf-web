@@ -38,6 +38,7 @@ A aplicação `Conexão Carreira` foi desenvolvida para promover a conexão entr
 #### [POST] /login
 
 **Descrição:** Retorna o token de acesso para a API.
+
 **Body:**
 ```
 {
@@ -49,6 +50,7 @@ A aplicação `Conexão Carreira` foi desenvolvida para promover a conexão entr
 #### [GET] /user
 
 **Descrição:** Retorna os dados de todos os usuários cadastrados.
+
 **Header:**
 ```
 token: your_login_token
@@ -57,6 +59,7 @@ token: your_login_token
 #### [GET] /user/{id}
 
 **Descrição:** Retorna os dados de um usuário em específico.
+
 **Header:**
 ```
 token: your_login_token
@@ -65,6 +68,7 @@ token: your_login_token
 #### [GET] /user/{id}/hability
 
 **Descrição:** Retorna as habilidades de um usuário.
+
 **Header:**
 ```
 token: your_login_token
@@ -73,6 +77,7 @@ token: your_login_token
 #### [POST] /user
 
 **Descrição:** Insere um novo usuário no sistema.
+
 **Header:**
 ```
 token: your_login_token
@@ -115,6 +120,7 @@ Possíveis valores para o campo estado:
 #### [PUT] /user/{id}
 
 **Descrição:** Atualiza os dados de um usuário.
+
 **Header:**
 ```
 token: your_login_token
@@ -157,6 +163,7 @@ Possíveis valores para o campo estado:
 #### [DELETE] /user/{id}
 
 **Descrição:** Exclui um usuário do sistema.
+
 **Header:**
 ```
 token: your_login_token
@@ -165,6 +172,7 @@ token: your_login_token
 #### [POST] /hability
 
 **Descrição:** Cadastra uma nova habilidade.
+
 **Header:**
 ```
 token: your_login_token
@@ -182,6 +190,7 @@ token: your_login_token
 #### [PUT] /hability/{id}
 
 **Descrição:** Atualiza os dados de uma habilidade.
+
 **Header:**
 ```
 token: your_login_token
@@ -199,6 +208,7 @@ token: your_login_token
 #### [DELETE] /hability/{id}
 
 **Descrição:** Exclui uma habilidade.
+
 **Header:**
 ```
 token: your_login_token
