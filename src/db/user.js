@@ -5,7 +5,7 @@ async function selectUser(id) {
     const query = "SELECT * FROM usuario WHERE id = $1";
     const usuario = [id];
     const res = await client.query(query, usuario);
-    return res.rows[0];
+    return res.rows;
 }
 
 async function selectUsers() {
