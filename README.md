@@ -48,6 +48,17 @@ A aplicação `Conexão Carreira` foi desenvolvida para promover a conexão entr
 }
 ```
 
+**Observações**
+
+Usuário padrão da API:
+
+```json
+{
+    "email": "admin@admin",
+    "senha": "admin123"
+}
+```
+
 ---
 #### [GET] /user
 
@@ -72,6 +83,16 @@ token: your_login_token
 #### [GET] /user/{id}/hability
 
 **Descrição:** Retorna as habilidades de um usuário.
+
+**Header:**
+```js
+token: your_login_token
+```
+
+---
+#### [GET] /user/{id}/contact
+
+**Descrição:** Retorna os contatos de um usuário.
 
 **Header:**
 ```js
@@ -107,19 +128,19 @@ token: your_login_token
 Possíveis valores para o campo curso:
 
 ```php
-[1] => "Agroindústria"
-[2] => "Agropecuária"
-[3] => "Informática"
+[0] => "Agroindústria"
+[1] => "Agropecuária"
+[2] => "Informática"
 ```
 
 Possíveis valores para o campo estado:
 
 ```php
-[1] => "Matriculado"
-[2] => "Cursando"
-[3] => "Trancado"
-[4] => "Concluído"
-[5] => "Desistente"
+[0] => "Matriculado"
+[1] => "Cursando"
+[2] => "Trancado"
+[3] => "Concluído"
+[4] => "Desistente"
 ```
 
 ---
@@ -151,19 +172,19 @@ token: your_login_token
 Possíveis valores para o campo curso:
 
 ```php
-[1] => "Agroindústria"
-[2] => "Agropecuária"
-[3] => "Informática"
+[0] => "Agroindústria"
+[1] => "Agropecuária"
+[2] => "Informática"
 ```
 
 Possíveis valores para o campo estado:
 
 ```php
-[1] => "Matriculado"
-[2] => "Cursando"
-[3] => "Trancado"
-[4] => "Concluído"
-[5] => "Desistente"
+[0] => "Matriculado"
+[1] => "Cursando"
+[2] => "Trancado"
+[3] => "Concluído"
+[4] => "Desistente"
 ```
 
 ---
@@ -218,6 +239,54 @@ token: your_login_token
 #### [DELETE] /hability/{id}
 
 **Descrição:** Exclui uma habilidade.
+
+**Header:**
+```js
+token: your_login_token
+```
+
+---
+#### [POST] /contact
+
+**Descrição:** Cadastra um novo contato.
+
+**Header:**
+```js
+token: your_login_token
+```
+
+**Body:**
+```json
+{
+    "usuario": "usuario" (Int),
+    "nome": "nome" (String),
+    "link": "link" (String)
+}
+```
+
+---
+#### [PUT] /contact/{id}
+
+**Descrição:** Atualiza os dados de um contato.
+
+**Header:**
+```js
+token: your_login_token
+```
+
+**Body:**
+```json
+{
+    "usuario": "usuario" (Int),
+    "nome": "nome" (String),
+    "link": "link" (String)
+}
+```
+
+---
+#### [DELETE] /contact/{id}
+
+**Descrição:** Exclui um contato.
 
 **Header:**
 ```js
