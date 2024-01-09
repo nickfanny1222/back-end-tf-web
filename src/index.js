@@ -4,6 +4,7 @@ dotenv.config();
 import express from "express";
 import defaultRouter from "./routes/default.js";
 import habilityRouter from "./routes/hability.js";
+import contactRouter from "./routes/contact.js";
 import userRouter from "./routes/user.js";
 import loginRouter from "./routes/login.js";
 
@@ -15,6 +16,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(userRouter);
 app.use(habilityRouter);
+app.use(contactRouter);
 app.use(loginRouter);
 app.use(defaultRouter);
 

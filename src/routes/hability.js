@@ -17,7 +17,7 @@ router.post("/hability", autenticacao, async (req, res) => {
 
         if (id === undefined) throw new Error("an error has ocurred");
 
-        res.status(201).json({ message: "Habilidade cadastrado com sucesso!", id: id });
+        res.status(201).json({ message: "Habilidade cadastrada com sucesso!", id: id });
     } 
     
     catch (error) {
