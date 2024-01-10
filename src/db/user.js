@@ -14,6 +14,14 @@ async function selectUsers() {
     return res.rows;
 }
 
+async function loginUser(data) { 
+    const client = await connect();
+    const query = "SELECT * FROM usuario WHERE email = $1 AND senha = $2";
+    const usuario = [data.email, data.senha];
+    const res = await client.query(query, usuario);
+    return res.rows;
+}
+
 async function deleteUser(id) {
     const client = await connect();
     const query = "DELETE FROM usuario WHERE id = $1";
@@ -35,4 +43,4 @@ async function updateUser(id, data) {
     await client.query(query, usuario);
 }
 
-export { selectUsers, insertUser, deleteUser, selectUser, updateUser };
+export { selectUsers, insertUser, deleteUser, selectUser, updateUser, loginUser };

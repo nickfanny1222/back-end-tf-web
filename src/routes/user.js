@@ -7,9 +7,24 @@ import {
     insertUser,
     deleteUser,
     updateUser,
+    loginUser
 } from "../db/user.js";
   
 import autenticacao from "../middlewares/autenticacao.js";
+
+router.post("/user/login", async (req, res) => {
+    try {
+        const user = await loginUser(req.body);
+
+        if (user.length > 0) res.json(user[0]);
+
+        else res.status(404).json({ message: "Email ou senha incorretos!" });
+    } 
+    
+    catch (err) {
+        res.status(err.status || 500).json({ message: err.message || "Erro!" });
+    }
+});
 
 router.get("/user", autenticacao, async (req, res) => {
     try {
