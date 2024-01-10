@@ -144,6 +144,24 @@ Possíveis valores para o campo estado:
 ```
 
 ---
+#### [POST] /user/login
+
+**Descrição:** Verifica as credenciais de um usuário e retorna seus dados se elas estiverem corretas.
+
+**Header:**
+```js
+token: your_login_token
+```
+
+**Body:**
+```json
+{
+    "email": "email" (String),
+    "senha": "senha" (String)
+}
+```
+
+---
 #### [PUT] /user/{id}
 
 **Descrição:** Atualiza os dados de um usuário.
