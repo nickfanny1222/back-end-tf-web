@@ -119,7 +119,8 @@ token: your_login_token
     "telefone": "telefone" (String),
     "curso": "curso" (Int),
     "estado": "estado" (Int),
-    "ativo": "ativo" (Bool)
+    "ativo": "ativo" (Bool),
+    "profile_image": "profile_image" (String)
 }
 ```
 
@@ -181,7 +182,8 @@ token: your_login_token
     "telefone": "telefone" (String),
     "curso": "curso" (Int),
     "estado": "estado" (Int),
-    "ativo": "ativo" (Bool)
+    "ativo": "ativo" (Bool),
+    "profile_image": "profile_image" (String)
 }
 ```
 
