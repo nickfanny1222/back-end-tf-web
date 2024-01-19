@@ -5,6 +5,7 @@ async function autenticar(email, senha) {
     const query = "SELECT * FROM usuario WHERE email = $1 AND senha = $2";
     const usuario = [email, senha];
     const res = await client.query(query, usuario);
+    client.end();
     return res.rows[0];
 }
 
